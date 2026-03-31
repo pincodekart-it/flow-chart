@@ -1,7 +1,12 @@
 import { type Edge } from "@xyflow/react";
 
 export const initialEdges = [
-  { id: "e1-2", source: "customer-register", target: "customer-login" },
+  {
+    id: "e1-2",
+    source: "customer-register",
+    target: "customer-login",
+    animated: true,
+  },
   { id: "e2-3", source: "customer-login", target: "customer-account" },
   { id: "e3-4", source: "customer-account", target: "add-to-cart" },
   { id: "e4-5", source: "add-to-cart", target: "order-checkout" },

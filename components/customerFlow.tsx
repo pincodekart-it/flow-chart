@@ -1,5 +1,5 @@
 import { useShallow } from "zustand/react/shallow";
-import { ReactFlow } from "@xyflow/react";
+import { ReactFlow, Controls, MiniMap, Background } from "@xyflow/react";
 import "@xyflow/react/dist/style.css";
 import useStore from "../store/customerFlow/store";
 
@@ -23,7 +23,11 @@ export default function Flow() {
         onEdgesChange={onEdgesChange}
         onConnect={onConnect}
         fitView
-      />
+      >
+        <Controls />
+        <MiniMap />
+        <Background variant="dots" gap={12} size={1} />
+      </ReactFlow>
     </div>
   );
 }
