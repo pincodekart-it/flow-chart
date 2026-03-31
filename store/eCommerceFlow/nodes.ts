@@ -1,37 +1,9 @@
 import { type AppNode } from "./types";
 import { initialNodes as orderPaymentNodes } from "../orderPaymentFlow/nodes";
+import { initialNodes as customerNodes } from "../customerFlow/nodes";
 export const initialNodes = [
   ...orderPaymentNodes,
-  {
-    id: "customer-register",
-    position: { x: 0, y: 0 },
-    data: { label: "Customer Register" },
-  },
-  {
-    id: "customer-login",
-    position: { x: 0, y: 100 },
-    data: { label: "Customer Login" },
-  },
-  {
-    id: "customer-account",
-    position: { x: 0, y: 200 },
-    data: { label: "Customer Account" },
-  },
-  {
-    id: "manage-profile",
-    position: { x: 0, y: 300 },
-    data: { label: "Manage Profile" },
-  },
-  {
-    id: "manage-address",
-    position: { x: -200, y: 300 },
-    data: { label: "Manage Address" },
-  },
-  {
-    id: "customer-wishlist",
-    position: { x: -200, y: 200 },
-    data: { label: "Wishlist" },
-  },
+  ...customerNodes,
   {
     id: "add-to-cart",
     position: { x: 200, y: 0 },
@@ -61,5 +33,5 @@ export const initialNodes = [
     id: "order-payment-return",
     position: { x: 200, y: 500 },
     data: { label: "Payment Return" },
-  }
+  },
 ] as AppNode[];
