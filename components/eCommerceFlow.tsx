@@ -1,7 +1,7 @@
 import { useShallow } from "zustand/react/shallow";
 import { Background, Controls, MiniMap, ReactFlow } from "@xyflow/react";
 import "@xyflow/react/dist/style.css";
-import useStore from "../store/customerFlow/store";
+import useStore from "../store/eCommerceFlow/store";
 
 const selector = (state: any) => ({
   nodes: state.nodes,
