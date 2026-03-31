@@ -15,9 +15,9 @@ export const initialNodes = [
     data: { label: "Payment" },
   },
   {
-    id: "order-confirmation",
+    id: "order-confirmed",
     position: { x: 200, y: 200 },
-    data: { label: "Order Confirmation" },
+    data: { label: "Order Confirmed" },
   },
   {
     id: "cancel-order",

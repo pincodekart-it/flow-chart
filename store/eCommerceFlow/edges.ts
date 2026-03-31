@@ -14,7 +14,7 @@ export const initialEdges = [
   {
     id: "e-commerce-order-payment-edge-2",
     source: "payment-successful",
-    target: "order-confirmation",
+    target: "order-confirmed",
     animated: true,
     label: "after successful payment",
   },
@@ -35,11 +35,11 @@ export const initialEdges = [
   {
     id: "e-commerce-edge-3",
     source: "order-payment",
-    target: "order-confirmation",
+    target: "order-confirmed",
   },
   {
     id: "e-commerce-edge-4",
-    source: "order-confirmation",
+    source: "order-confirmed",
     target: "cancel-order",
   },
   {
