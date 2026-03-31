@@ -19,6 +19,9 @@ export const LayoutHeader = () => {
           <Link href="/logistics" className="hover:underline">
             Logistics flow
           </Link>
+          <Link href="/vd" className="hover:underline">
+           VD flow
+          </Link>
         </menu>
       </div>
     </header>

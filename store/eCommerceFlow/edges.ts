@@ -4,6 +4,7 @@ import { initialEdges as customerEdges } from "../customerFlow/edges";
 import { initialEdges as checkoutEdges } from "../checkoutFlow/edges";
 import { initialEdges as manufactureEdges } from "../manufactureFlow/edges";
 import { initialEdges as logisticEdges } from "../logisticFlow/edges";
+import { initialEdges as vdEdges } from "../vdFlow/edges";
 
 export const initialEdges = [
   ...orderPaymentEdges,
@@ -11,6 +12,7 @@ export const initialEdges = [
   ...checkoutEdges,
   ...manufactureEdges,
   ...logisticEdges,
+  ...vdEdges,
   {
     id: "e-commerce-order-payment-edge-1",
     source: "checkout-flow-payment",
@@ -45,5 +47,12 @@ export const initialEdges = [
     target: "logistic-flow-node-1",
     animated: true,
     label: "after manufacturing",
+  },
+  {
+    id: "e-commerce-logistic-edge-1",
+    source: "logistic-flow-node-16",
+    target: "vd-flow-node-1",
+    animated: true,
+    label: "after logistic pickup",
   }
 ] as Edge[];
