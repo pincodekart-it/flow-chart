@@ -17,11 +17,10 @@ export const initialEdges = [
   {
     id: "e-commerce-order-payment-edge-2",
     source: "payment-successful",
-    target: "order-confirmed",
+    target: "checkout-flow-confirmed",
     animated: true,
     label: "after successful payment",
   },
-  ...customerEdges,
   {
     id: "e-commerce-customer-edge-1",
     source: "customer-flow-cart",

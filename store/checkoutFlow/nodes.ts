@@ -20,5 +20,10 @@ export const initialNodes = [
     id: "checkout-flow-payment",
     position: { x: 200, y: 300 },
     data: { label: "Payment" },
-  }
+  },
+  {
+    id: "checkout-flow-confirmed",
+    position: { x: 200, y: 400 },
+    data: { label: "Order Confirmed" },
+  },
 ] as AppNode[];
