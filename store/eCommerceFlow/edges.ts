@@ -32,4 +32,18 @@ export const initialEdges = [
     animated: true,
     label: "from account to checkout",
   },
+  {
+    id: "e-commerce-customer-edge-2",
+    source: "checkout-flow-confirmed",
+    target: "manufacture-flow-initiated",
+    animated: true,
+    label: "after checkout confirmation",
+  },
+  {
+    id: "e-commerce-manufacture-edge-1",
+    source: "manufacture-flow-awb-generated",
+    target: "logistic-flow-node-1",
+    animated: true,
+    label: "after manufacturing",
+  }
 ] as Edge[];
