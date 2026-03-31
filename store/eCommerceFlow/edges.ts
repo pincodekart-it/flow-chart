@@ -2,11 +2,13 @@ import { type Edge } from "@xyflow/react";
 import { initialEdges as orderPaymentEdges } from "../orderPaymentFlow/edges";
 import { initialEdges as customerEdges } from "../customerFlow/edges";
 import { initialEdges as checkoutEdges } from "../checkoutFlow/edges";
+import { initialEdges as manufactureEdges } from "../manufactureFlow/edges";
 
 export const initialEdges = [
   ...orderPaymentEdges,
   ...customerEdges,
   ...checkoutEdges,
+  ...manufactureEdges,
   {
     id: "e-commerce-order-payment-edge-1",
     source: "checkout-flow-payment",
