@@ -1,12 +1,15 @@
 import { type Edge } from "@xyflow/react";
 import { initialEdges as orderPaymentEdges } from "../orderPaymentFlow/edges";
 import { initialEdges as customerEdges } from "../customerFlow/edges";
+import { initialEdges as checkoutEdges } from "../checkoutFlow/edges";
 
 export const initialEdges = [
   ...orderPaymentEdges,
+  ...customerEdges,
+  ...checkoutEdges,
   {
     id: "e-commerce-order-payment-edge-1",
-    source: "order-payment",
+    source: "checkout-flow-payment",
     target: "payment-initiated",
     animated: true,
     label: "proceed to payment",
@@ -22,29 +25,8 @@ export const initialEdges = [
   {
     id: "e-commerce-customer-edge-1",
     source: "customer-flow-cart",
-    target: "order-checkout",
+    target: "checkout-flow-checkout",
     animated: true,
     label: "from account to checkout",
-  },
-  {
-    id: "e-commerce-edge-2",
-    source: "order-checkout",
-    target: "order-payment",
-  },
-
-  {
-    id: "e-commerce-edge-3",
-    source: "order-payment",
-    target: "order-confirmed",
-  },
-  {
-    id: "e-commerce-edge-4",
-    source: "order-confirmed",
-    target: "cancel-order",
-  },
-  {
-    id: "e-commerce-edge-5",
-    source: "cancel-order",
-    target: "order-payment-return",
   },
 ] as Edge[];
