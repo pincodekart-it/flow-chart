@@ -2,11 +2,11 @@
 
 import dynamic from "next/dynamic";
 
-const FlowComponent = dynamic(() => import("../components/eCommerceFlow"), {
+const FlowComponent = dynamic(() => import("../../components/orderPaymentFlow"), {
   ssr: false,
 });
 
-export default function Home() {
+export default function Page() {
   return (
     <div>
       <FlowComponent />
