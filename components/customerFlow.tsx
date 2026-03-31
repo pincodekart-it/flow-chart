@@ -42,7 +42,6 @@ export default function Flow() {
       >
         <Controls />
         <MiniMap />
-        <Background gap={12} size={1} />
       </ReactFlow>
     </div>
   );
