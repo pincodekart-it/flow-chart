@@ -2,7 +2,7 @@
 
 import dynamic from "next/dynamic";
 
-const FlowComponent = dynamic(() => import("../components/mainFlow"), {
+const FlowComponent = dynamic(() => import("../components/customerFlow"), {
   ssr: false,
 });
 
