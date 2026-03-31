@@ -1,6 +1,7 @@
 import { type AppNode } from "./types";
-
+import { initialNodes as orderPaymentNodes } from "../orderPaymentFlow/nodes";
 export const initialNodes = [
+  ...orderPaymentNodes,
   {
     id: "customer-register",
     position: { x: 0, y: 0 },
@@ -47,9 +48,9 @@ export const initialNodes = [
     data: { label: "Payment" },
   },
   {
-    id: "place-order",
+    id: "order-confirmation",
     position: { x: 200, y: 300 },
-    data: { label: "Place Order" },
+    data: { label: "Order Confirmation" },
   },
   {
     id: "cancel-order",
