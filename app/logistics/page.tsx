@@ -2,7 +2,7 @@
 
 import dynamic from "next/dynamic";
 
-const FlowComponent = dynamic(() => import("../../components/dakFlow"), {
+const FlowComponent = dynamic(() => import("../../components/logisticFlow"), {
   ssr: false,
 });
 

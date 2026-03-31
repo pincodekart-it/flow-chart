@@ -10,11 +10,11 @@ export const LayoutHeader = () => {
           <Link href="/" className="hover:underline">
             Home
           </Link>
-          <Link href="/kart" className="hover:underline">
-            Kart
+          <Link href="/order-payment" className="hover:underline">
+            Order Payment
           </Link>
-          <Link href="/dak" className="hover:underline">
-            Dak
+          <Link href="/logistics" className="hover:underline">
+            Logistics
           </Link>
         </menu>
       </div>
