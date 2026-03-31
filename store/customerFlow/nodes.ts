@@ -26,4 +26,9 @@ export const initialNodes = [
     position: { x: -400, y: 200 },
     data: { label: "Wishlist" },
   },
+  {
+    id: "customer-flow-cart",
+    position: { x: 0, y: 200 },
+    data: { label: "Shopping Cart" },
+  },
 ] as AppNode[];

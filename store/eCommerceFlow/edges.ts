@@ -21,12 +21,11 @@ export const initialEdges = [
   ...customerEdges,
   {
     id: "e-commerce-customer-edge-1",
-    source: "customer-flow-account",
-    target: "add-to-cart",
+    source: "customer-flow-cart",
+    target: "order-checkout",
     animated: true,
-    label: "from account to add to cart",
+    label: "from account to checkout",
   },
-  { id: "e-commerce-edge-1", source: "add-to-cart", target: "order-checkout" },
   {
     id: "e-commerce-edge-2",
     source: "order-checkout",

@@ -21,6 +21,11 @@ export const initialEdges = [
   {
     id: "customer-flow-edge-4",
     source: "customer-flow-account",
+    target: "customer-flow-cart",
+  },
+  {
+    id: "customer-flow-edge-5",
+    source: "customer-flow-account",
     target: "customer-flow-address",
   },
 ] as Edge[];

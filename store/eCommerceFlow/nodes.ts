@@ -5,33 +5,28 @@ export const initialNodes = [
   ...orderPaymentNodes,
   ...customerNodes,
   {
-    id: "add-to-cart",
-    position: { x: 200, y: 0 },
-    data: { label: "Add to Cart" },
-  },
-  {
     id: "order-checkout",
-    position: { x: 200, y: 100 },
+    position: { x: 200, y: 0 },
     data: { label: "Checkout" },
   },
   {
     id: "order-payment",
-    position: { x: 200, y: 200 },
+    position: { x: 200, y: 100 },
     data: { label: "Payment" },
   },
   {
     id: "order-confirmation",
-    position: { x: 200, y: 300 },
+    position: { x: 200, y: 200 },
     data: { label: "Order Confirmation" },
   },
   {
     id: "cancel-order",
-    position: { x: 200, y: 400 },
+    position: { x: 200, y: 300 },
     data: { label: "Cancel Order" },
   },
   {
     id: "order-payment-return",
-    position: { x: 200, y: 500 },
+    position: { x: 200, y: 400 },
     data: { label: "Payment Return" },
   },
 ] as AppNode[];
