@@ -19,6 +19,7 @@ export const initialEdges = [
     target: "payment-initiated",
     animated: true,
     label: "proceed to payment",
+    type: "step",
   },
   {
     id: "e-commerce-order-payment-edge-2",
@@ -26,6 +27,7 @@ export const initialEdges = [
     target: "checkout-flow-confirmed",
     animated: true,
     label: "after successful payment",
+    type: "step",
   },
   {
     id: "e-commerce-customer-edge-1",
@@ -33,6 +35,7 @@ export const initialEdges = [
     target: "checkout-flow-checkout",
     animated: true,
     label: "from account to checkout",
+    type: "step",
   },
   {
     id: "e-commerce-customer-edge-2",
@@ -40,6 +43,7 @@ export const initialEdges = [
     target: "manufacture-flow-initiated",
     animated: true,
     label: "after checkout confirmation",
+    type: "step",
   },
   {
     id: "e-commerce-manufacture-edge-1",
@@ -47,6 +51,7 @@ export const initialEdges = [
     target: "logistic-flow-node-1",
     animated: true,
     label: "after manufacturing",
+    type: "step",
   },
   {
     id: "e-commerce-logistic-edge-1",
@@ -54,5 +59,6 @@ export const initialEdges = [
     target: "vd-flow-node-1",
     animated: true,
     label: "after logistic pickup",
-  }
+    type: "step",
+  },
 ] as Edge[];
