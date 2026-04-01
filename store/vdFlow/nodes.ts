@@ -4,12 +4,12 @@ export const initialNodes = [
   {
     id: "vd-flow-node-1",
     position: { x: 800, y: 300 },
-    data: { label: "Received Parcel From Destination Mini Hub" },
+    data: { label: "VD Received Parcel From Destination Mini Hub" },
   },
   {
     id: "vd-flow-node-2",
     position: { x: 800, y: 400 },
-    data: { label: "Delivered To Customer" },
+    data: { label: "VD Delivered Parcel To Customer" },
   },
   {
     id: "vd-flow-node-3",
@@ -19,6 +19,6 @@ export const initialNodes = [
   {
     id: "vd-flow-node-4",
     position: { x: 800, y: 600 },
-    data: { label: "Return Parcel To Destination Mini Hub" },
+    data: { label: "VD Return Parcel To Destination Mini Hub" },
   },
 ] as AppNode[];
