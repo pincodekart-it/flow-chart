@@ -23,4 +23,16 @@ export const initialEdges = [
     target: "manufacture-flow-awb-generated",
     type: "step",
   },
+  {
+    id: "manufacture-flow-edge-5",
+    source: "manufacture-flow-login",
+    target: "manufacture-flow-add-product",
+    type: "step",
+  },
+  {
+    id: "manufacture-flow-edge-6",
+    source: "manufacture-flow-login",
+    target: "manufacture-flow-stock",
+    type: "step",
+  }
 ] as Edge[];
