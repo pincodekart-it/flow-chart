@@ -13,6 +13,9 @@ export const LayoutHeader = () => {
           <Link href="/customer" className="hover:underline">
             Customer flow
           </Link>
+          <Link href="/manufacture" className="hover:underline">
+            Manufacture flow
+          </Link>
           <Link href="/order-payment" className="hover:underline">
             Order Payment flow
           </Link>
@@ -20,7 +23,7 @@ export const LayoutHeader = () => {
             Logistics flow
           </Link>
           <Link href="/vd" className="hover:underline">
-           VD flow
+            VD flow
           </Link>
         </menu>
       </div>
