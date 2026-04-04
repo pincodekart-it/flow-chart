@@ -19,4 +19,10 @@ export const initialEdges = [
     target: "checkout-flow-payment",
     type: "step",
   },
+  {
+    id: "checkout-flow-edge-4",
+    source: "checkout-flow-payment",
+    target: "checkout-flow-confirmed",
+    type: "step",
+  }
 ] as Edge[];

@@ -19,4 +19,22 @@ export const initialEdges = [
     target: "vd-flow-node-4",
     type: "step",
   },
+  {
+    id: "vd-flow-edge-4",
+    source: "vd-flow-node-4",
+    target: "vd-flow-node-5",
+    type: "step",
+  },
+  {
+    id: "vd-flow-edge-5",
+    source: "vd-flow-node-5",
+    target: "vd-flow-node-6",
+    type: "step",
+  },
+  {
+    id: "vd-flow-edge-6",
+    source: "vd-flow-node-6",
+    target: "vd-flow-node-7",
+    type: "step",
+  },
 ] as Edge[];

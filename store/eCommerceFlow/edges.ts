@@ -56,7 +56,7 @@ export const initialEdges = [
   {
     id: "e-commerce-logistic-edge-1",
     source: "logistic-flow-node-16",
-    target: "vd-flow-node-1",
+    target: "vd-flow-node-4",
     animated: true,
     label: "after logistic pickup",
     type: "step",
