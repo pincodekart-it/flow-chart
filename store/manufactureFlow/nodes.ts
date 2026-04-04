@@ -18,12 +18,12 @@ export const initialNodes = [
   },
   {
     id: "manufacture-flow-initiated",
-    position: { x: -800, y: 300 },
+    position: { x: -600, y: 200 },
     data: { label: "Manufacture Initiated After Received Order" },
   },
   {
     id: "manufacture-flow-awb-generated",
-    position: { x: -800, y: 400 },
+    position: { x: -600, y: 300 },
     data: { label: "Manufacture Generate AWB" },
   },
   {

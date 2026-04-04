@@ -11,11 +11,13 @@ export const initialEdges = [
     id: "manufacture-flow-edge-2",
     source: "manufacture-flow-verified",
     target: "manufacture-flow-login",
+    type: "step",
   },
   {
     id: "manufacture-flow-edge-3",
     source: "manufacture-flow-login",
     target: "manufacture-flow-initiated",
+    type: "step",
   },
   {
     id: "manufacture-flow-edge-4",
@@ -34,5 +36,5 @@ export const initialEdges = [
     source: "manufacture-flow-login",
     target: "manufacture-flow-stock",
     type: "step",
-  }
+  },
 ] as Edge[];
