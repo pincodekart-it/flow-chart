@@ -16,6 +16,11 @@ export const LayoutHeader = () => {
           <Link href="/manufacture" className="hover:underline">
             Manufacture flow
           </Link>
+          
+          <Link href="/checkout" className="hover:underline">
+            Checkout flow
+          </Link>
+
           <Link href="/order-payment" className="hover:underline">
             Order Payment flow
           </Link>
