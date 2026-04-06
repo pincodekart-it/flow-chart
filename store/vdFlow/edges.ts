@@ -3,38 +3,44 @@ import { type Edge } from "@xyflow/react";
 export const initialEdges = [
   {
     id: "vd-flow-edge-1",
-    source: "vd-flow-node-1",
-    target: "vd-flow-node-2",
+    source: "vd-registered",
+    target: "vd-verified",
     type: "step",
   },
   {
     id: "vd-flow-edge-2",
-    source: "vd-flow-node-2",
-    target: "vd-flow-node-3",
+    source: "vd-verified",
+    target: "vd-login",
     type: "step",
   },
   {
     id: "vd-flow-edge-3",
-    source: "vd-flow-node-3",
-    target: "vd-flow-node-4",
+    source: "vd-login",
+    target: "vd-received-parcel",
     type: "step",
   },
   {
     id: "vd-flow-edge-4",
-    source: "vd-flow-node-4",
-    target: "vd-flow-node-5",
+    source: "vd-received-parcel",
+    target: "customer-accept-order",
     type: "step",
   },
   {
     id: "vd-flow-edge-5",
-    source: "vd-flow-node-5",
-    target: "vd-flow-node-6",
+    source: "vd-received-parcel",
+    target: "customer-cancel-order",
+    type: "step",
+  },
+  { 
+    id: "vd-flow-edge-6",
+    source: "customer-accept-order",
+    target: "vd-delivered-parcel",
     type: "step",
   },
   {
-    id: "vd-flow-edge-6",
-    source: "vd-flow-node-6",
-    target: "vd-flow-node-7",
+    id: "vd-flow-edge-7",
+    source: "customer-cancel-order",
+    target: "vd-return-parcel",
     type: "step",
-  },
+  }
 ] as Edge[];
