@@ -20,5 +20,10 @@ export const initialNodes = [
     id: "payment-failed",
     position: { x: 600, y: 200 },
     data: { label: "Payment Failed" },
-  }
+  },
+  {
+    id: "payment-logs",
+    position: { x: 500, y: 300 },
+    data: { label: "Payment Logs" },
+  },
 ] as AppNode[];
