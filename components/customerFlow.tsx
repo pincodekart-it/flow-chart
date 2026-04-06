@@ -27,6 +27,7 @@ export default function Flow() {
       >
         <Controls />
         <MiniMap />
+        <Background />
       </ReactFlow>
     </div>
   );
