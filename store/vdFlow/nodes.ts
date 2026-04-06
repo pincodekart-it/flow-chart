@@ -22,23 +22,29 @@ export const initialNodes = [
     data: { label: "VD Received Parcel From Destination Mini Hub" },
   },
   {
+    id: "vd-at-customer-location",
+    position: { x: 900, y: 800 },
+    data: { label: "VD At Customer Location" },
+  },
+  {
     id: "customer-accept-order",
-    position: { x: 800, y: 800 },
+    position: { x: 800, y: 900 },
     data: { label: "Customer Accept Order" },
   },
   {
     id: "customer-cancel-order",
-    position: { x: 1000, y: 800 },
+    position: { x: 1000, y: 900 },
     data: { label: "Customer Cancel Order" },
   },
+
   {
     id: "vd-delivered-parcel",
-    position: { x: 800, y: 900 },
+    position: { x: 800, y: 1000 },
     data: { label: "VD Delivered Parcel" },
   },
   {
     id: "vd-return-parcel",
-    position: { x: 1000, y: 900 },
+    position: { x: 1000, y: 1000 },
     data: { label: "VD Return Parcel to Destination Mini Hub" },
   },
 ] as AppNode[];

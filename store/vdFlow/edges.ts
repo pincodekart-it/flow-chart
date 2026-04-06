@@ -2,43 +2,49 @@ import { type Edge } from "@xyflow/react";
 
 export const initialEdges = [
   {
-    id: "vd-flow-edge-1",
+    id: "vd-registered-to-vd-verified",
     source: "vd-registered",
     target: "vd-verified",
     type: "step",
   },
   {
-    id: "vd-flow-edge-2",
+    id: "vd-verified-to-vd-login",
     source: "vd-verified",
     target: "vd-login",
     type: "step",
   },
   {
-    id: "vd-flow-edge-3",
+    id: "vd-login-to-vd-received-parcel",
     source: "vd-login",
     target: "vd-received-parcel",
     type: "step",
   },
   {
-    id: "vd-flow-edge-4",
+    id: "vd-received-parcel-to-vd-at-customer-location",
     source: "vd-received-parcel",
-    target: "customer-accept-order",
+    target: "vd-at-customer-location",
     type: "step",
   },
   {
-    id: "vd-flow-edge-5",
-    source: "vd-received-parcel",
+    id: "vd-received-parcel-to-customer-cancel-order",
+    source: "vd-at-customer-location",
     target: "customer-cancel-order",
     type: "step",
   },
+  {
+    id: "vd-at-customer-location-to-customer-accept-order",
+    source: "vd-at-customer-location",
+    target: "customer-accept-order",
+    type: "step",
+  },
   { 
-    id: "vd-flow-edge-6",
+    id: "customer-accept-order-to-vd-delivered-parcel",
     source: "customer-accept-order",
     target: "vd-delivered-parcel",
     type: "step",
   },
   {
-    id: "vd-flow-edge-7",
+    id: "customer-cancel-order-to-vd-return-parcel",
     source: "customer-cancel-order",
     target: "vd-return-parcel",
     type: "step",
